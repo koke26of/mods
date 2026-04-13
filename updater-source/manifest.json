@@ -1,0 +1,504 @@
+{
+    "modpack_name": "Mi Modpack",
+    "version": "1.0.0",
+    "minecraft_version": "1.20.1",
+    "forge_version": "47.2.0",
+    "mods": [
+        {
+            "id": "accessories-neoforge-1.0.0-beta.48+1.20.1",
+            "name": "accessories-neoforge-1.0.0-beta.48+1.20.1",
+            "category": "core",
+            "filename": "accessories-neoforge-1.0.0-beta.48+1.20.1.jar",
+            "url": "https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/mods/core/accessories-neoforge-1.0.0-beta.48+1.20.1.jar",
+            "hash": "1da10e840cbbf08338a1690c3045d21a6b7c46681fa69ef3054698c97cb98e0d"
+        },
+        {
+            "id": "appleskin-forge-mc1.20.1-2.5.1",
+            "name": "appleskin-forge-mc1.20.1-2.5.1",
+            "category": "core",
+            "filename": "appleskin-forge-mc1.20.1-2.5.1.jar",
+            "url": "https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/mods/core/appleskin-forge-mc1.20.1-2.5.1.jar",
+            "hash": "e12419e43e3babc810af289403c5cd96bd7f09809b389acc6bb2f122b4b2a426"
+        },
+        {
+            "id": "ars_creo-1.20.1-4.3.0",
+            "name": "ars_creo-1.20.1-4.3.0",
+            "category": "core",
+            "filename": "ars_creo-1.20.1-4.3.0.jar",
+            "url": "https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/mods/core/ars_creo-1.20.1-4.3.0.jar",
+            "hash": "31964f41303ee2265ac4dbed66c6af20c11bd01637016d13e8de091e87fb78f7"
+        },
+        {
+            "id": "ars_elemental-1.20.1-0.6.7.9",
+            "name": "ars_elemental-1.20.1-0.6.7.9",
+            "category": "core",
+            "filename": "ars_elemental-1.20.1-0.6.7.9.jar",
+            "url": "https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/mods/core/ars_elemental-1.20.1-0.6.7.9.jar",
+            "hash": "57cb38746f3751e902bdfbe9856d3e80d9badb7c9a52bc2806ee84be767817d8"
+        },
+        {
+            "id": "ars_nouveau-1.20.1-4.12.7-all",
+            "name": "ars_nouveau-1.20.1-4.12.7-all",
+            "category": "core",
+            "filename": "ars_nouveau-1.20.1-4.12.7-all.jar",
+            "url": "https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/mods/core/ars_nouveau-1.20.1-4.12.7-all.jar",
+            "hash": "1f1debc282a0c379c1141f2840ea294eede6f6b544c589663f40bbe17b59a1af"
+        },
+        {
+            "id": "attributefix-forge-1.20.1-21.0.5",
+            "name": "AttributeFix-Forge-1.20.1-21.0.5",
+            "category": "core",
+            "filename": "AttributeFix-Forge-1.20.1-21.0.5.jar",
+            "url": "https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/mods/core/AttributeFix-Forge-1.20.1-21.0.5.jar",
+            "hash": "43ccfd91c1a24d1b3c9d3ccf2dd6a86e9f0c2ba442b111a2238fbff3cf88af11"
+        },
+        {
+            "id": "balm-forge-1.20.1-7.3.38-all",
+            "name": "balm-forge-1.20.1-7.3.38-all",
+            "category": "core",
+            "filename": "balm-forge-1.20.1-7.3.38-all.jar",
+            "url": "https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/mods/core/balm-forge-1.20.1-7.3.38-all.jar",
+            "hash": "1f5222d5c0ab72b1f60d83c5b371faa9cf733635810efb2695a7bd56dbfa4458"
+        },
+        {
+            "id": "botarium-forge-1.20.1-2.3.4",
+            "name": "botarium-forge-1.20.1-2.3.4",
+            "category": "core",
+            "filename": "botarium-forge-1.20.1-2.3.4.jar",
+            "url": "https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/mods/core/botarium-forge-1.20.1-2.3.4.jar",
+            "hash": "470810a364ff4ad4d4fcd4e55798263938fc893970eacecc58e8b741a392b1cf"
+        },
+        {
+            "id": "carryon-forge-1.20.1-2.1.2.7",
+            "name": "carryon-forge-1.20.1-2.1.2.7",
+            "category": "core",
+            "filename": "carryon-forge-1.20.1-2.1.2.7.jar",
+            "url": "https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/mods/core/carryon-forge-1.20.1-2.1.2.7.jar",
+            "hash": "d7470921fc5ff988788d43409083f62478aecc91f4b81d7e6b63c80c933d4613"
+        },
+        {
+            "id": "cloth-config-11.1.136-forge",
+            "name": "cloth-config-11.1.136-forge",
+            "category": "core",
+            "filename": "cloth-config-11.1.136-forge.jar",
+            "url": "https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/mods/core/cloth-config-11.1.136-forge.jar",
+            "hash": "1e895e85cf5b1e1905ef3178ec155c8badfe22a1577b92c09143a5aa1f4ce0f2"
+        },
+        {
+            "id": "comforts-forge-6.4.0+1.20.1",
+            "name": "comforts-forge-6.4.0+1.20.1",
+            "category": "core",
+            "filename": "comforts-forge-6.4.0+1.20.1.jar",
+            "url": "https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/mods/core/comforts-forge-6.4.0+1.20.1.jar",
+            "hash": "56398103e0e3821c98f21a5b556d57deb0686b9f50868b4278ecb73cc9d2f42c"
+        },
+        {
+            "id": "copycats-3.0.7+mc.1.20.1-forge",
+            "name": "copycats-3.0.7+mc.1.20.1-forge",
+            "category": "core",
+            "filename": "copycats-3.0.7+mc.1.20.1-forge.jar",
+            "url": "https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/mods/core/copycats-3.0.7+mc.1.20.1-forge.jar",
+            "hash": "bc59446d8aff50924f805286927a1bda3df16c6f4e6f893865f410e581b62f1a"
+        },
+        {
+            "id": "corpse-forge-1.20.1-1.0.23",
+            "name": "corpse-forge-1.20.1-1.0.23",
+            "category": "core",
+            "filename": "corpse-forge-1.20.1-1.0.23.jar",
+            "url": "https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/mods/core/corpse-forge-1.20.1-1.0.23.jar",
+            "hash": "9f639204588512abe767bb5c2ff97d41f50352af916de939ac8029c95d57ae7b"
+        },
+        {
+            "id": "cosmeticarmorreworked-1.20.1-v1a",
+            "name": "cosmeticarmorreworked-1.20.1-v1a",
+            "category": "core",
+            "filename": "cosmeticarmorreworked-1.20.1-v1a.jar",
+            "url": "https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/mods/core/cosmeticarmorreworked-1.20.1-v1a.jar",
+            "hash": "c790e8671625b05ec0aa19272e0ea74ea95619f953e3c6f39a6736af0d386804"
+        },
+        {
+            "id": "create-1.20.1-6.0.8",
+            "name": "create-1.20.1-6.0.8",
+            "category": "core",
+            "filename": "create-1.20.1-6.0.8.jar",
+            "url": "https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/mods/core/create-1.20.1-6.0.8.jar",
+            "hash": "6fbb910c367dbce8e4fc7e5bf64b6edd4de980906ed00af8e47e4af843c0d9b0"
+        },
+        {
+            "id": "create-new-age-1.1.7f+forge-mc1.20.1",
+            "name": "create-new-age-1.1.7f+forge-mc1.20.1",
+            "category": "core",
+            "filename": "create-new-age-1.1.7f+forge-mc1.20.1.jar",
+            "url": "https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/mods/core/create-new-age-1.1.7f+forge-mc1.20.1.jar",
+            "hash": "8b8b14159ef1a696bc86f60ae474ed73ef0daba906e2a5aa9cea94d44ebafd38"
+        },
+        {
+            "id": "createcontraptionterminals-1.20-1.2.0",
+            "name": "createcontraptionterminals-1.20-1.2.0",
+            "category": "core",
+            "filename": "createcontraptionterminals-1.20-1.2.0.jar",
+            "url": "https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/mods/core/createcontraptionterminals-1.20-1.2.0.jar",
+            "hash": "b4ef1e5cc4bef1c6c8bb24c080f2ff585ad21bc6ce8d8caaebe156fb1e00ab22"
+        },
+        {
+            "id": "create_central_kitchen-1.20.1-for-create-6.0.6-1.4.3b",
+            "name": "create_central_kitchen-1.20.1-for-create-6.0.6-1.4.3b",
+            "category": "core",
+            "filename": "create_central_kitchen-1.20.1-for-create-6.0.6-1.4.3b.jar",
+            "url": "https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/mods/core/create_central_kitchen-1.20.1-for-create-6.0.6-1.4.3b.jar",
+            "hash": "1ed474df7dcd5a3847953a232acb981b49008273cc721737f3db4cc41d24cb89"
+        },
+        {
+            "id": "curios-forge-5.14.1+1.20.1",
+            "name": "curios-forge-5.14.1+1.20.1",
+            "category": "core",
+            "filename": "curios-forge-5.14.1+1.20.1.jar",
+            "url": "https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/mods/core/curios-forge-5.14.1+1.20.1.jar",
+            "hash": "1e817919a35b37cf30524aaec73f0ca5130452f23f168f844854df282eb8e51f"
+        },
+        {
+            "id": "customskinloader_forgev2-14.28",
+            "name": "CustomSkinLoader_ForgeV2-14.28",
+            "category": "core",
+            "filename": "CustomSkinLoader_ForgeV2-14.28.jar",
+            "url": "https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/mods/core/CustomSkinLoader_ForgeV2-14.28.jar",
+            "hash": "2edbc47d4cb378d4cab9a7968b578e9f9dd4aad1dcb7400a9b7af29eda89bd3f"
+        },
+        {
+            "id": "dungeon crawl-1.20.1-2.3.15",
+            "name": "Dungeon Crawl-1.20.1-2.3.15",
+            "category": "core",
+            "filename": "Dungeon Crawl-1.20.1-2.3.15.jar",
+            "url": "https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/mods/core/Dungeon Crawl-1.20.1-2.3.15.jar",
+            "hash": "71e1b8ceaf20c3102ae42ef2761ca47f30fe4cbd20ecbb687df2ce75d1785514"
+        },
+        {
+            "id": "dungeons-and-taverns-3.0.3.f",
+            "name": "dungeons-and-taverns-3.0.3.f",
+            "category": "core",
+            "filename": "dungeons-and-taverns-3.0.3.f.jar",
+            "url": "https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/mods/core/dungeons-and-taverns-3.0.3.f.jar",
+            "hash": "251b531ff2882c61a4c2eba3bd7b1683aa22b6c2d459e27bfde04a2948c99e1e"
+        },
+        {
+            "id": "elevatorid-1.20.1-1.9.1-forge",
+            "name": "elevatorid-1.20.1-1.9.1-forge",
+            "category": "core",
+            "filename": "elevatorid-1.20.1-1.9.1-forge.jar",
+            "url": "https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/mods/core/elevatorid-1.20.1-1.9.1-forge.jar",
+            "hash": "7487c091bc8e6ae7b83c61471c97258b380fab2a0f421ed84df78f92ba630f75"
+        },
+        {
+            "id": "embeddium-0.3.31+mc1.20.1",
+            "name": "embeddium-0.3.31+mc1.20.1",
+            "category": "core",
+            "filename": "embeddium-0.3.31+mc1.20.1.jar",
+            "url": "https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/mods/core/embeddium-0.3.31+mc1.20.1.jar",
+            "hash": "eed3d1325f2acc2fd4e69bb495e5ccb91d962126ac5330f0582ebc2a3daf47fb"
+        },
+        {
+            "id": "farmersdelight-1.20.1-1.2.11",
+            "name": "FarmersDelight-1.20.1-1.2.11",
+            "category": "core",
+            "filename": "FarmersDelight-1.20.1-1.2.11.jar",
+            "url": "https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/mods/core/FarmersDelight-1.20.1-1.2.11.jar",
+            "hash": "9a2db05541f07e15a81d514f4f47627f1c738d0464c1885765aa460117909318"
+        },
+        {
+            "id": "framework-forge-1.20.1-0.8.0",
+            "name": "framework-forge-1.20.1-0.8.0",
+            "category": "core",
+            "filename": "framework-forge-1.20.1-0.8.0.jar",
+            "url": "https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/mods/core/framework-forge-1.20.1-0.8.0.jar",
+            "hash": "37c267f46d8b8dfa81bae8c9fa9fa6467e456cadecae10722ee91b43437f25a0"
+        },
+        {
+            "id": "geckolib-forge-1.20.1-4.8.3",
+            "name": "geckolib-forge-1.20.1-4.8.3",
+            "category": "core",
+            "filename": "geckolib-forge-1.20.1-4.8.3.jar",
+            "url": "https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/mods/core/geckolib-forge-1.20.1-4.8.3.jar",
+            "hash": "8b90e11871a58b63816e99c529e6c932bc88e6beb3fec97ad618e22217df3250"
+        },
+        {
+            "id": "goblintraders-forge-1.20.1-1.11.5",
+            "name": "goblintraders-forge-1.20.1-1.11.5",
+            "category": "core",
+            "filename": "goblintraders-forge-1.20.1-1.11.5.jar",
+            "url": "https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/mods/core/goblintraders-forge-1.20.1-1.11.5.jar",
+            "hash": "05362605ea68a0b45a12b796a6787f30430bd55e462959f0a43ccd63ca14438a"
+        },
+        {
+            "id": "immersiveores-1.20.1-0.9",
+            "name": "immersiveores-1.20.1-0.9",
+            "category": "core",
+            "filename": "immersiveores-1.20.1-0.9.jar",
+            "url": "https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/mods/core/immersiveores-1.20.1-0.9.jar",
+            "hash": "bdaeb50c706914e1a7e04c7a354c0d59520e940a4be7342b4b019d8d5d6f0520"
+        },
+        {
+            "id": "ironfurnaces-1.20.1-4.1.8",
+            "name": "ironfurnaces-1.20.1-4.1.8",
+            "category": "core",
+            "filename": "ironfurnaces-1.20.1-4.1.8.jar",
+            "url": "https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/mods/core/ironfurnaces-1.20.1-4.1.8.jar",
+            "hash": "e457052522cef1f8644b6929a64eab96de04ce9e6e32a715f1d68d79da26d66b"
+        },
+        {
+            "id": "jade-1.20.1-forge-11.13.2",
+            "name": "Jade-1.20.1-Forge-11.13.2",
+            "category": "core",
+            "filename": "Jade-1.20.1-Forge-11.13.2.jar",
+            "url": "https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/mods/core/Jade-1.20.1-Forge-11.13.2.jar",
+            "hash": "31949971a7a8d5a5bc95ad9d400cbedfd2d65ffbfb3cea7c0b2fa3b47431a0a5"
+        },
+        {
+            "id": "jei-1.20.1-forge-15.20.0.129",
+            "name": "jei-1.20.1-forge-15.20.0.129",
+            "category": "core",
+            "filename": "jei-1.20.1-forge-15.20.0.129.jar",
+            "url": "https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/mods/core/jei-1.20.1-forge-15.20.0.129.jar",
+            "hash": "5e5af05aa082f5844c7b3ed0b3bd9374e160ae1914906f71d90c5656e4e80039"
+        },
+        {
+            "id": "kotlinforforge-4.12.0-all",
+            "name": "kotlinforforge-4.12.0-all",
+            "category": "core",
+            "filename": "kotlinforforge-4.12.0-all.jar",
+            "url": "https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/mods/core/kotlinforforge-4.12.0-all.jar",
+            "hash": "6a66c6a68ec09f8717cdbf06883394f0ee24d7cd826b7134a0f81839e8e720ae"
+        },
+        {
+            "id": "lootr-forge-1.20-0.7.35.94",
+            "name": "lootr-forge-1.20-0.7.35.94",
+            "category": "core",
+            "filename": "lootr-forge-1.20-0.7.35.94.jar",
+            "url": "https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/mods/core/lootr-forge-1.20-0.7.35.94.jar",
+            "hash": "01200ee5889e6bcc3c5fa8f32b7b49a4bd58e653699eeb655c6f2dd314e3ce51"
+        },
+        {
+            "id": "mcw-furniture-3.4.1-mc1.20.1forge",
+            "name": "mcw-furniture-3.4.1-mc1.20.1forge",
+            "category": "core",
+            "filename": "mcw-furniture-3.4.1-mc1.20.1forge.jar",
+            "url": "https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/mods/core/mcw-furniture-3.4.1-mc1.20.1forge.jar",
+            "hash": "9f068315ac5ae7c4b76a6ac0679cde9be59d5cbf37488a477f13b95fe1cbc37d"
+        },
+        {
+            "id": "mousetweaks-forge-mc1.20.1-2.25.1",
+            "name": "MouseTweaks-forge-mc1.20.1-2.25.1",
+            "category": "core",
+            "filename": "MouseTweaks-forge-mc1.20.1-2.25.1.jar",
+            "url": "https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/mods/core/MouseTweaks-forge-mc1.20.1-2.25.1.jar",
+            "hash": "6c27d16aa715ac6613a55fc463739e2c7b78279e4e4c4cede299e4a2d4a70f08"
+        },
+        {
+            "id": "naturescompass-1.20.1-1.12.0-forge",
+            "name": "NaturesCompass-1.20.1-1.12.0-forge",
+            "category": "core",
+            "filename": "NaturesCompass-1.20.1-1.12.0-forge.jar",
+            "url": "https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/mods/core/NaturesCompass-1.20.1-1.12.0-forge.jar",
+            "hash": "bc3601e9e050802569647de843fe9d3160934c5f31412cba62ca2ea8c1485197"
+        },
+        {
+            "id": "oculus-mc1.20.1-1.8.0",
+            "name": "oculus-mc1.20.1-1.8.0",
+            "category": "core",
+            "filename": "oculus-mc1.20.1-1.8.0.jar",
+            "url": "https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/mods/core/oculus-mc1.20.1-1.8.0.jar",
+            "hash": "0945df0cba0f62b3901dd80c3268e5311b770ece78c78037a45db12ac0425fef"
+        },
+        {
+            "id": "patchouli-1.20.1-85-forge",
+            "name": "Patchouli-1.20.1-85-FORGE",
+            "category": "core",
+            "filename": "Patchouli-1.20.1-85-FORGE.jar",
+            "url": "https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/mods/core/Patchouli-1.20.1-85-FORGE.jar",
+            "hash": "05f7b5d52f6b8f0fd7f8b4822fa07a192d1394d83a264309c9d221d6d4fd21c5"
+        },
+        {
+            "id": "polymorph-forge-0.49.10+1.20.1",
+            "name": "polymorph-forge-0.49.10+1.20.1",
+            "category": "core",
+            "filename": "polymorph-forge-0.49.10+1.20.1.jar",
+            "url": "https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/mods/core/polymorph-forge-0.49.10+1.20.1.jar",
+            "hash": "cbe63a0a1cb6ae8dbc0e29bb96d149a137cd4e714b295fa49d230994091d157f"
+        },
+        {
+            "id": "serversleep-datapack",
+            "name": "serversleep-datapack",
+            "category": "core",
+            "filename": "serversleep-datapack.jar",
+            "url": "https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/mods/core/serversleep-datapack.jar",
+            "hash": "fa7af5d2218581e2b250468d891f3362d3c1ab7c033a87704873118ad772d401"
+        },
+        {
+            "id": "sliceanddice-forge-3.6.0",
+            "name": "sliceanddice-forge-3.6.0",
+            "category": "core",
+            "filename": "sliceanddice-forge-3.6.0.jar",
+            "url": "https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/mods/core/sliceanddice-forge-3.6.0.jar",
+            "hash": "bafdcbeda044603b59eb16059829a6698c1a58d1ce865b8658e598f2718d315a"
+        },
+        {
+            "id": "sound-physics-remastered-forge-1.20.1-1.5.1",
+            "name": "sound-physics-remastered-forge-1.20.1-1.5.1",
+            "category": "core",
+            "filename": "sound-physics-remastered-forge-1.20.1-1.5.1.jar",
+            "url": "https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/mods/core/sound-physics-remastered-forge-1.20.1-1.5.1.jar",
+            "hash": "1d7a0d4cdbdee61532dd23ddbc2833292e945d8ec2d20f3271af86b02b0fc108"
+        },
+        {
+            "id": "steam_rails-1.7.2+forge-mc1.20.1",
+            "name": "Steam_Rails-1.7.2+forge-mc1.20.1",
+            "category": "core",
+            "filename": "Steam_Rails-1.7.2+forge-mc1.20.1.jar",
+            "url": "https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/mods/core/Steam_Rails-1.7.2+forge-mc1.20.1.jar",
+            "hash": "da82605f01a4a43ea0907467583704253c2e718392d44be1cd7b9761edcb0da1"
+        },
+        {
+            "id": "terrablender-forge-1.20.1-3.0.1.10",
+            "name": "TerraBlender-forge-1.20.1-3.0.1.10",
+            "category": "core",
+            "filename": "TerraBlender-forge-1.20.1-3.0.1.10.jar",
+            "url": "https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/mods/core/TerraBlender-forge-1.20.1-3.0.1.10.jar",
+            "hash": "c109016f46ca9bdae69976bf080bbf2e8e5968cb66c0a78845f8ca6af5dbbeb1"
+        },
+        {
+            "id": "toms_storage-1.20-1.7.1",
+            "name": "toms_storage-1.20-1.7.1",
+            "category": "core",
+            "filename": "toms_storage-1.20-1.7.1.jar",
+            "url": "https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/mods/core/toms_storage-1.20-1.7.1.jar",
+            "hash": "08552be86f960111e501227707dc089c91b8a55f6c1be09baee188338576ff9b"
+        },
+        {
+            "id": "waystones-forge-1.20.1-14.1.20",
+            "name": "waystones-forge-1.20.1-14.1.20",
+            "category": "core",
+            "filename": "waystones-forge-1.20.1-14.1.20.jar",
+            "url": "https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/mods/core/waystones-forge-1.20.1-14.1.20.jar",
+            "hash": "f03014fabf2186a1dff69bbe2473b3373ab9d6c7d2ea8aa18e46b4f5c7dbacb2"
+        },
+        {
+            "id": "[1.20.1] securitycraft v1.10.1",
+            "name": "[1.20.1] SecurityCraft v1.10.1",
+            "category": "core",
+            "filename": "[1.20.1] SecurityCraft v1.10.1.jar",
+            "url": "https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/mods/core/[1.20.1] SecurityCraft v1.10.1.jar",
+            "hash": "ec601ba570c5351c353fc1ee0eb2f4823d1c026d265a96d3ec802070a50b6ebd"
+        },
+        {
+            "id": "betterthirdperson-forge-1.20-1.9.0",
+            "name": "BetterThirdPerson-Forge-1.20-1.9.0",
+            "category": "qol",
+            "filename": "BetterThirdPerson-Forge-1.20-1.9.0.jar",
+            "url": "https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/mods/qol/BetterThirdPerson-Forge-1.20-1.9.0.jar",
+            "hash": "e8b575996cc5ff40e010161cca8923b8367ce210999da7f00487d4ce0de63755"
+        },
+        {
+            "id": "connector-1.0.0-beta.48+1.20.1",
+            "name": "Connector-1.0.0-beta.48+1.20.1",
+            "category": "qol",
+            "filename": "Connector-1.0.0-beta.48+1.20.1.jar",
+            "url": "https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/mods/qol/Connector-1.0.0-beta.48+1.20.1.jar",
+            "hash": "b22aa7794c67805eb8fdfe72af840ace6feb1c21c4a64385ca111a2c18abbafd"
+        },
+        {
+            "id": "connectorextras-1.11.2+1.20.1",
+            "name": "ConnectorExtras-1.11.2+1.20.1",
+            "category": "qol",
+            "filename": "ConnectorExtras-1.11.2+1.20.1.jar",
+            "url": "https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/mods/qol/ConnectorExtras-1.11.2+1.20.1.jar",
+            "hash": "10d149fc9348b57120f50e3f82ac6f7e544ae18f0b5b7342c0cab3af38f5acd8"
+        },
+        {
+            "id": "continuity-3.0.0+1.20.1.forge",
+            "name": "continuity-3.0.0+1.20.1.forge",
+            "category": "qol",
+            "filename": "continuity-3.0.0+1.20.1.forge.jar",
+            "url": "https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/mods/qol/continuity-3.0.0+1.20.1.forge.jar",
+            "hash": "855ee87de79b0e161713a2689f3f2d07259e9490af194b8cfb6a4400c6ea1c76"
+        },
+        {
+            "id": "dynamic-fps-3.11.4+minecraft-1.20.0-forge",
+            "name": "dynamic-fps-3.11.4+minecraft-1.20.0-forge",
+            "category": "qol",
+            "filename": "dynamic-fps-3.11.4+minecraft-1.20.0-forge.jar",
+            "url": "https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/mods/qol/dynamic-fps-3.11.4+minecraft-1.20.0-forge.jar",
+            "hash": "b0ecdf3a0619208441062ceeebce79256223ac4e341844a09a6859170d671920"
+        },
+        {
+            "id": "fabric-api-0.92.6+1.11.14+1.20.1",
+            "name": "fabric-api-0.92.6+1.11.14+1.20.1",
+            "category": "qol",
+            "filename": "fabric-api-0.92.6+1.11.14+1.20.1.jar",
+            "url": "https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/mods/qol/fabric-api-0.92.6+1.11.14+1.20.1.jar",
+            "hash": "9b140af437581d32e5ee17d20f8fe882000e6a34cba85c152ae5bccc9570cc03"
+        },
+        {
+            "id": "immediatelyfast-forge-1.5.4+1.20.4",
+            "name": "ImmediatelyFast-Forge-1.5.4+1.20.4",
+            "category": "qol",
+            "filename": "ImmediatelyFast-Forge-1.5.4+1.20.4.jar",
+            "url": "https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/mods/qol/ImmediatelyFast-Forge-1.5.4+1.20.4.jar",
+            "hash": "da781a31b2c8d8a845ed48c89b6463f1df3f2c655de10d8d4f5bed8123ff68a8"
+        },
+        {
+            "id": "inventoryprofilesnext-forge-1.20-1.10.20",
+            "name": "InventoryProfilesNext-forge-1.20-1.10.20",
+            "category": "qol",
+            "filename": "InventoryProfilesNext-forge-1.20-1.10.20.jar",
+            "url": "https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/mods/qol/InventoryProfilesNext-forge-1.20-1.10.20.jar",
+            "hash": "2f664f23ed031f6cfacce01b0461c450e2248435936cb6b7e2e0463c6ec56343"
+        },
+        {
+            "id": "jadeaddons-1.20.1-forge-5.5.0",
+            "name": "JadeAddons-1.20.1-Forge-5.5.0",
+            "category": "qol",
+            "filename": "JadeAddons-1.20.1-Forge-5.5.0.jar",
+            "url": "https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/mods/qol/JadeAddons-1.20.1-Forge-5.5.0.jar",
+            "hash": "3fa00b2ee33ee154ef155997fc7e12fb0e4d7f4f06d1bfd47dd6ee3c6a1549d4"
+        },
+        {
+            "id": "libipn-forge-1.20-4.0.2",
+            "name": "libIPN-forge-1.20-4.0.2",
+            "category": "qol",
+            "filename": "libIPN-forge-1.20-4.0.2.jar",
+            "url": "https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/mods/qol/libIPN-forge-1.20-4.0.2.jar",
+            "hash": "cb96fa15eddc74c243677f7f5b6e3ecaa87bb33f4854ae0353646f304058add6"
+        },
+        {
+            "id": "modmenu-7.2.2",
+            "name": "modmenu-7.2.2",
+            "category": "qol",
+            "filename": "modmenu-7.2.2.jar",
+            "url": "https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/mods/qol/modmenu-7.2.2.jar",
+            "hash": "a041b0f0305ffa5eb90120aa23768e1cfbb27583904b1751e3783c0f69382f1a"
+        },
+        {
+            "id": "notenoughanimations-forge-1.12.0-mc1.20.1",
+            "name": "notenoughanimations-forge-1.12.0-mc1.20.1",
+            "category": "qol",
+            "filename": "notenoughanimations-forge-1.12.0-mc1.20.1.jar",
+            "url": "https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/mods/qol/notenoughanimations-forge-1.12.0-mc1.20.1.jar",
+            "hash": "d76046b3ced7f8d18c3b021747f8beb03904f5984a9da7c66f9464084e209d1b"
+        },
+        {
+            "id": "xaerominimap-forge-1.20.1-25.3.10",
+            "name": "xaerominimap-forge-1.20.1-25.3.10",
+            "category": "qol",
+            "filename": "xaerominimap-forge-1.20.1-25.3.10.jar",
+            "url": "https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/mods/qol/xaerominimap-forge-1.20.1-25.3.10.jar",
+            "hash": "dd118045c4daa8e27614f576d515ba5b07e4ccae060b6b1a536437f155879c7b"
+        },
+        {
+            "id": "xaeroworldmap-forge-1.20.1-1.40.11",
+            "name": "xaeroworldmap-forge-1.20.1-1.40.11",
+            "category": "qol",
+            "filename": "xaeroworldmap-forge-1.20.1-1.40.11.jar",
+            "url": "https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/mods/qol/xaeroworldmap-forge-1.20.1-1.40.11.jar",
+            "hash": "d41ea1366e36f79f1b38efb44920fa9354a929eee070c493bda60b0c5cc2b16a"
+        }
+    ]
+}

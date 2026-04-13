@@ -5,6 +5,7 @@ import requests
 import customtkinter as ctk
 import threading
 from urllib.parse import urlparse
+from tkinter import messagebox
 
 class ModSyncApp(ctk.CTk):
     def __init__(self):
@@ -17,7 +18,7 @@ class ModSyncApp(ctk.CTk):
 
         # --- CONFIGURACIÓN ---
         # 1. Cambia esto por la URL "RAW" de tu manifest en GitHub
-        self.manifest_url = "https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/manifest.json"
+        self.manifest_url = "https://raw.githubusercontent.com/koke26of/mods/refs/heads/main/manifest.json?token=GHSAT0AAAAAAD2LC2UEZMD7IDJZOJ2N4F442O5BQSQ"
         
         # 2. Carpeta de mods (detecta AppData automáticamente)
         self.mods_folder = os.path.join(os.getenv('APPDATA'), '.minecraft', 'mods')
@@ -138,13 +139,25 @@ class ModSyncApp(ctk.CTk):
                 to_download.append(mod)
 
         # 2. Borrar mods obsoletos (que no están en el manifest)
-        self.log("Checking for obsolete mods...")
-        manifest_filenames = [m["filename"] for m in self.remote_manifest["mods"]]
+        obsolete_files = []
         for local_file in os.listdir(self.mods_folder):
             if local_file.endswith(".jar") and local_file not in keep_files:
-                # Solo borramos si el archivo es parte de lo que gestionamos o es basura
-                self.log(f"Removing obsolete mod: {local_file}")
-                os.remove(os.path.join(self.mods_folder, local_file))
+                obsolete_files.append(local_file)
+
+        if obsolete_files:
+            self.log(f"Found {len(obsolete_files)} obsolete mods.")
+            # Pedir confirmación (esto debe ser síncrono para pausar la ejecución)
+            confirm = messagebox.askyesno("Confirm Deletion", 
+                f"The following mods are not in the official list and will be deleted:\n\n" + 
+                "\n".join(obsolete_files[:10]) + ("\n..." if len(obsolete_files) > 10 else "") +
+                "\n\nDo you want to proceed?")
+            
+            if confirm:
+                for file in obsolete_files:
+                    self.log(f"Removing: {file}")
+                    os.remove(os.path.join(self.mods_folder, file))
+            else:
+                self.log("Deletion cancelled. Some extra mods might cause conflicts.")
 
         # 3. Descargar mods nuevos/actualizados
         total = len(to_download)
