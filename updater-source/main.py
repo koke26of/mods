@@ -18,7 +18,7 @@ class ModSyncApp(ctk.CTk):
 
         # --- CONFIGURACIÓN ---
         # 1. Cambia esto por la URL "RAW" de tu manifest en GitHub
-        self.manifest_url = "https://raw.githubusercontent.com/koke26of/mods/refs/heads/main/manifest.json?token=GHSAT0AAAAAAD2LC2UEZMD7IDJZOJ2N4F442O5BQSQ"
+        self.manifest_url = "https://raw.githubusercontent.com/koke26of/mods/refs/heads/main/updater-source/manifest.json?token=GHSAT0AAAAAAD2LC2UEBIPGSSLZY5CUYVK42O5BZDA"
         
         # 2. Carpeta de mods (detecta AppData automáticamente)
         self.mods_folder = os.path.join(os.getenv('APPDATA'), '.minecraft', 'mods')
@@ -85,6 +85,9 @@ class ModSyncApp(ctk.CTk):
             self.after(0, lambda: self.sync_button.configure(state="normal"))
         except Exception as e:
             self.log(f"Error loading manifest: {e}")
+            if 'response' in locals():
+                self.log("--- Server Response ---")
+                self.log(response.text[:200]) # Mostrar los primeros 200 caracteres del error
 
     def render_mods(self):
         # Limpiar listas
