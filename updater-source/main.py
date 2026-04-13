@@ -18,7 +18,7 @@ class ModSyncApp(ctk.CTk):
 
         # --- CONFIGURACIÓN ---
         # 1. Cambia esto por la URL "RAW" de tu manifest en GitHub
-        self.manifest_url = "https://raw.githubusercontent.com/koke26of/mods/refs/heads/main/updater-source/manifest.json?token=GHSAT0AAAAAAD2LC2UEXLQOFFYJVSPZZ2S62O5CGQA"
+        self.manifest_url = "https://raw.githubusercontent.com/koke26of/mods/main/updater-source/manifest.json"
         # 2. Carpeta de mods (detecta AppData automáticamente)
         self.mods_folder = os.path.join(os.getenv('APPDATA'), '.minecraft', 'mods')
         

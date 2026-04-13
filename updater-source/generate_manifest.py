@@ -55,7 +55,7 @@ def generate_manifest(base_dir, base_url, modpack_name="Mi Modpack"):
 
 if __name__ == "__main__":
     # CONFIGURACIÓN MANUAL
-    BASE_URL_GITHUB = "https://raw.githubusercontent.com/koke26of/mods/refs/heads/main/updater-source/mods_local"
+    BASE_URL_GITHUB = "https://raw.githubusercontent.com/koke26of/mods/main/updater-source/mods_local"
     
     # Asegúrate de tener carpetas 'core' y 'qol' con tus mods dentro de una carpeta 'mods_local'
     if not os.path.exists("mods_local"):
