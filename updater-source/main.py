@@ -6,7 +6,6 @@ import customtkinter as ctk
 import threading
 from urllib.parse import urlparse
 from tkinter import messagebox
-import winsound
 
 class ModSyncApp(ctk.CTk):
     def __init__(self):
@@ -19,8 +18,7 @@ class ModSyncApp(ctk.CTk):
 
         # --- CONFIGURACIÓN ---
         # 1. Cambia esto por la URL "RAW" de tu manifest en GitHub
-        self.manifest_url = "https://raw.githubusercontent.com/koke26of/mods/refs/heads/main/updater-source/manifest.json?token=GHSAT0AAAAAAD2LC2UEBIPGSSLZY5CUYVK42O5BZDA"
-        
+        self.manifest_url = "https://raw.githubusercontent.com/koke26of/mods/refs/heads/main/updater-source/manifest.json?token=GHSAT0AAAAAAD2LC2UEXLQOFFYJVSPZZ2S62O5CGQA"
         # 2. Carpeta de mods (detecta AppData automáticamente)
         self.mods_folder = os.path.join(os.getenv('APPDATA'), '.minecraft', 'mods')
         
@@ -202,7 +200,6 @@ class ModSyncApp(ctk.CTk):
                 self.after(0, lambda x=i: self.progress_bar.set((x+1)/total))
 
         self.log("Sync Complete! You can close and play.")
-        winsound.PlaySound("SystemExit", winsound.SND_ALIAS)  # Sonido de notificación de Windows
         self.after(0, lambda: self.sync_button.configure(state="normal", text="Sync Complete ✅"))
 
 if __name__ == "__main__":
