@@ -34,9 +34,9 @@ def generate_manifest(base_dir, base_url, modpack_name="Mi Modpack"):
                 print(f"Procesando [{category}]: {filename}")
                 
                 file_hash = get_file_hash(file_path)
+                file_size = os.path.getsize(file_path)
                 
                 # Construir la URL (ajustar según cómo lo subas a GitHub)
-                # Ejemplo para GitHub: https://raw.githubusercontent.com/USUARIO/REPO/main/mods/core/el_mod.jar
                 mod_url = f"{base_url}/{category}/{filename}"
                 
                 manifest["mods"].append({
@@ -45,7 +45,8 @@ def generate_manifest(base_dir, base_url, modpack_name="Mi Modpack"):
                     "category": category,
                     "filename": filename,
                     "url": mod_url,
-                    "hash": file_hash
+                    "hash": file_hash,
+                    "size": file_size
                 })
 
     with open("manifest.json", "w", encoding="utf-8") as f:

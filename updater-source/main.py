@@ -6,6 +6,7 @@ import customtkinter as ctk
 import threading
 from urllib.parse import urlparse
 from tkinter import messagebox
+import winsound
 
 class ModSyncApp(ctk.CTk):
     def __init__(self):
@@ -94,15 +95,24 @@ class ModSyncApp(ctk.CTk):
         for widget in self.core_list.winfo_children(): widget.destroy()
         for widget in self.qol_list.winfo_children(): widget.destroy()
 
+        core_count = 0
+        qol_count = 0
+
         for mod in self.remote_manifest["mods"]:
             if mod["category"] == "core":
+                core_count += 1
                 label = ctk.CTkLabel(self.core_list, text=f"• {mod['name']}", anchor="w")
                 label.pack(fill="x", padx=5, pady=2)
             else:
+                qol_count += 1
                 var = ctk.BooleanVar(value=True)
                 self.selected_qol[mod["id"]] = var
                 check = ctk.CTkCheckBox(self.qol_list, text=mod["name"], variable=var)
                 check.pack(fill="x", padx=5, pady=5)
+        
+        # Actualizar títulos de pestañas con conteos
+        self.tabview._segmented_button._buttons_dict["Core Mods (Mandatory)"].configure(text=f"Core Mods ({core_count})")
+        self.tabview._segmented_button._buttons_dict["Optional Features (QoL)"].configure(text=f"QoL Mods ({qol_count})")
 
     def calculate_hash(self, filepath):
         sha256_hash = hashlib.sha256()
@@ -169,13 +179,30 @@ class ModSyncApp(ctk.CTk):
             self.after(0, lambda: self.progress_bar.set(1))
         else:
             for i, mod in enumerate(to_download):
+                local_path = os.path.join(self.mods_folder, mod["filename"])
                 self.log(f"Downloading ({i+1}/{total}): {mod['name']}")
+                
+                # Descarga real
                 r = requests.get(mod["url"])
-                with open(os.path.join(self.mods_folder, mod["filename"]), 'wb') as f:
+                with open(local_path, 'wb') as f:
                     f.write(r.content)
+                
+                # VALIDACIÓN POST-INSTALACIÓN
+                if os.path.exists(local_path):
+                    actual_size = os.path.getsize(local_path)
+                    expected_size = mod.get("size", 0)
+                    
+                    if expected_size > 0 and actual_size != expected_size:
+                        self.log(f"⚠️ ERROR: {mod['name']} size mismatch!")
+                        self.log(f"Expected: {expected_size} bytes, Got: {actual_size} bytes")
+                        # Aquí podrías añadir una lógica de reintento si quisieras
+                    else:
+                        self.log(f"Validated: {mod['name']} ({actual_size} bytes)")
+
                 self.after(0, lambda x=i: self.progress_bar.set((x+1)/total))
 
         self.log("Sync Complete! You can close and play.")
+        winsound.PlaySound("SystemExit", winsound.SND_ALIAS)  # Sonido de notificación de Windows
         self.after(0, lambda: self.sync_button.configure(state="normal", text="Sync Complete ✅"))
 
 if __name__ == "__main__":
