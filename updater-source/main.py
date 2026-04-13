@@ -6,6 +6,7 @@ import customtkinter as ctk
 import threading
 from urllib.parse import urlparse
 from tkinter import messagebox
+import winsound
 
 class ModSyncApp(ctk.CTk):
     def __init__(self):
@@ -111,6 +112,23 @@ class ModSyncApp(ctk.CTk):
         # Actualizar títulos de pestañas con conteos
         self.tabview._segmented_button._buttons_dict["Core Mods (Mandatory)"].configure(text=f"Core Mods ({core_count})")
         self.tabview._segmented_button._buttons_dict["Optional Features (QoL)"].configure(text=f"QoL Mods ({qol_count})")
+        
+        # Actualizar texto del botón con el total inicial
+        self.after(0, self.update_sync_button_text)
+
+    def update_sync_button_text(self):
+        # Esta función calcula rápidamente cuántos faltan para mostrarlo en el botón
+        count = 0
+        for mod in self.remote_manifest["mods"]:
+            if mod["category"] == "core" or (mod["id"] in self.selected_qol and self.selected_qol[mod["id"]].get()):
+                local_path = os.path.join(self.mods_folder, mod["filename"])
+                if not os.path.exists(local_path) or self.calculate_hash(local_path) != mod["hash"]:
+                    count += 1
+        
+        if count > 0:
+            self.sync_button.configure(text=f"Update {count} Mods")
+        else:
+            self.sync_button.configure(text="Everything is Up to Date")
 
     def calculate_hash(self, filepath):
         sha256_hash = hashlib.sha256()
@@ -200,6 +218,7 @@ class ModSyncApp(ctk.CTk):
                 self.after(0, lambda x=i: self.progress_bar.set((x+1)/total))
 
         self.log("Sync Complete! You can close and play.")
+        winsound.PlaySound("SystemExit", winsound.SND_ALIAS)  # Sonido de notificación
         self.after(0, lambda: self.sync_button.configure(state="normal", text="Sync Complete ✅"))
 
 if __name__ == "__main__":
