@@ -1,0 +1,25 @@
+{
+  "modpack_name": "Mi Modpack Forge 1.20.1",
+  "version": "1.0.0",
+  "minecraft_version": "1.20.1",
+  "forge_version": "47.2.0",
+  "mods": [
+    {
+      "id": "jei",
+      "name": "Just Enough Items",
+      "category": "core",
+      "filename": "jei-1.20.1-forge-15.3.0.1.jar",
+      "url": "https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/mods/core/jei-1.20.1-forge-15.3.0.1.jar",
+      "hash": "8c6f7d..."
+    },
+    {
+      "id": "mouse-tweaks",
+      "name": "Mouse Tweaks",
+      "category": "qol",
+      "filename": "MouseTweaks-forge-mc1.20.1-2.25.jar",
+      "url": "https://raw.githubusercontent.com/TU_USUARIO/TU_REPO/main/mods/qol/MouseTweaks-forge-mc1.20.1-2.25.jar",
+      "hash": "a2b3c4...",
+      "description": "Mejoras para el manejo del inventario."
+    }
+  ]
+}
